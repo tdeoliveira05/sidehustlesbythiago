@@ -1,2 +1,2 @@
 # sidehustlesbythiago
-My personal website!
+Hustles of the side kind.
