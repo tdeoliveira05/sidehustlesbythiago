@@ -4,16 +4,61 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Revenue Calculator</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("button").addEventListener('click',function ()
+        {
+
+          //Calculate revenue targets
+          var revenue = document.getElementById("revenue").value;
+          var address = document.getElementById("address").value;
+
+          console.log(address);
+          console.log(revenue);
+
+          //percentage
+          var percentage = "8%"
+         document.getElementById("result").textContent = `Your revenue is higher than ${percentage} of restaurants in your region`;
+        }  );
+    });
+  </script>
 
 </head>
 
 <body>
   <script src="js/scripts.js"></script>
-  <span> Hey there, welcome ee. </span>
+  <div class="calculator-block">
+
+    <div class="calculator-title">
+      <h1>Revenue calculator</h1>
+    </div>
+
+    <div class="div-input">
+      address
+      <input id="address"></input>
+    </div>
+
+    <div class="div-input">
+      revenue
+      <input id="revenue"></input>
+    </div>
+
+    <div class="div-button">
+      <button id="button"> Calculate </button>
+    </div>
+
+    <div class="result-box">
+      <span>Your Percentile</span>
+      <br>
+      <span class="result" id="result"></span>
+    </div>
+
+  </div>
 </body>
 </html>

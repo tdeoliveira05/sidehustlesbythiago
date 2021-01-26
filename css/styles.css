@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  width:100vw;
+  height: 100vh;
+  background-color: #f6f8ff;
+  color: #09aee0;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+div {
+  color: #09aee0
+}
+
+.calculator-block {
+  width:50%;
+  height: 60%;
+  max-width: 600px;
+  max-height: 900px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: white
+}
+
+.calculator-title {
+  width: 100%;
+}
+
+.div-input {
+  padding: 10px;
+  border: none;
+}
+
+.result-box {
+  padding: 20px
+}
